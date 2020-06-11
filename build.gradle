@@ -23,5 +23,7 @@ test {
 	useJUnitPlatform()
 	testLogging {
 		events "passed", "skipped", "failed"
+			includeTags 'fast'
+			excludeTags 'slow'
 	}
 }
